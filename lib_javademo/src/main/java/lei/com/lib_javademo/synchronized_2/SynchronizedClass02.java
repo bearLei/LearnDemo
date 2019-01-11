@@ -1,15 +1,18 @@
-package lei.com.lib_javademo.synchronized_1;
+package lei.com.lib_javademo.synchronized_2;
 
 import android.util.Log;
 
+import lei.com.lib_javademo.synchronized_1.TestThreadA;
+import lei.com.lib_javademo.synchronized_1.TestThreadB;
+
 /**
  * create by lei on 2019/1/11/011
- * desc:测试方法内的变量是线程安全的
+ * desc:测试实例变量非线程安全
  */
-public class SynchronizedClass01 {
+public class SynchronizedClass02 {
 
+    int num = 5;
     public  void add(String str){
-        int num = 5;
             if (str.equalsIgnoreCase("a")) {
                 num++;
             } else {
@@ -20,8 +23,8 @@ public class SynchronizedClass01 {
     }
 
     public void test(){
-        TestThreadA testThreadA = new TestThreadA(this);
-        TestThreadB testThreadB = new TestThreadB(this);
+        TestThread2A testThreadA = new TestThread2A(this);
+        TestThread2B testThreadB = new TestThread2B(this);
         testThreadA.start();
         testThreadB.start();
     }
