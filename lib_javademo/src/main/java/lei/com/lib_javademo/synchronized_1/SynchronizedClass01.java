@@ -5,6 +5,7 @@ import android.util.Log;
 /**
  * create by lei on 2019/1/11/011
  * desc:测试方法内的变量是线程安全的
+ * 方法内变量不存在 非线程安全问题，原因：方法内的变量是私有
  */
 public class SynchronizedClass01 {
 

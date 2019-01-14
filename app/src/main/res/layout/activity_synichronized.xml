@@ -23,7 +23,31 @@
             android:layout_height="1dp"
             android:background="#ededed"
             />
+        <TextView
+            android:id="@+id/synchronized_btn_02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="测试实例变量非线程安全"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ededed"
+            />
 
+        <TextView
+            android:id="@+id/synchronized_btn_03"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="测试多线程访问多实例变量"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ededed"
+            />
     </LinearLayout>
 
 </ScrollView>
